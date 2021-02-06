@@ -1,7 +1,6 @@
-// Define UI Variables 
 const taskInput = document.querySelector('#task'); //the task input text field
 const form = document.querySelector('#task-form'); //The form at the top
-const filter = document.querySelector('#filter'); //the task filter text field
+const filter = document.querySelector('#filter');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
 const reloadIcon = document.querySelector('.fa'); 
