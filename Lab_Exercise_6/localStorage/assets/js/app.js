@@ -32,6 +32,17 @@ function clearAllTasks() {
     }
     clearAllTasksFromDB();
 }
+
+function filterTasks(e) {
+    var userInp = filter.value;
+    document.querySelectorAll(".collection-item").forEach(function(aa) {
+        if(aa.textContent.includes(userInp)){
+            aa.style.display = "block";
+        } else{
+            aa.style.display = "none";
+        }
+});
+}
 function removeTask(e) {
     if (e.target.parentElement.classList.contains('delete-item')) {
         if (confirm('Are You Sure about that ?')) {
