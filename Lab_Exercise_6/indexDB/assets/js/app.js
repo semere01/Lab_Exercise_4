@@ -111,7 +111,7 @@ function sortDisplay(e){
                 link.className = 'delete-item secondary-content';
                 link.innerHTML = `
                  <i class="fa fa-remove"></i>
-                &nbsp;<a href="./edit.html?id=${cursor.value.id}"><i class="fa fa-edit"></i> </a>
+                &nbsp;<a href="./change.html?id=${cursor.value.id}"><i class="fa fa-edit"></i> </a>
                 `;
                 li.appendChild(link);
                 li.appendChild(document.createTextNode(cursor.value.taskname));
